@@ -10,7 +10,7 @@ const Laporan24Jam = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          "https://script.google.com/macros/s/AKfycbw0_R038MM5OMGOLp5LFGdLrRiKfmEWQPh6UwyvyX6HDQtBdihb7SW2Zxw_IO-RVxTN/exec"
+          "https://script.googleusercontent.com/macros/echo?user_content_key=IbbHF7UgnaTQulV0BhDzUHkSGOmeuNybaFrAk7Hn6TEt4X1pXDoZwAzgDuENeFTZOZClkZxC4ZUBk6ucmgeH4drU3cX22Nn8m5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnHy3gT5yJXrsaCgZfPT_Q0Ith6y_4Rpw87R9okFYJ4IDs3Kxu2lik9kBXwcXtRuO2NreMVD3J-TDNcf70ecGlqIKLruRGYBrzQ&lib=MizesH1kGBx24P9OyykvHawtTN0PwlAv9"
         );
         setApiData(response.data);
         console.log("Bulan Data:", response.data?.API[1]);
@@ -22,9 +22,14 @@ const Laporan24Jam = () => {
     fetchData();
   }, []);
 
-  const value24Jam = apiData?.API[0]["24 Jam"];
-  const valueBulan = apiData?.API[0]?.Bulan;
-  const valueTahun = apiData?.API[0]?.Tahun;
+  const valueDAP24Jam = apiData?.API[0]?.DAP24Jam;
+  const valueDAPBulan = apiData?.API[0]?.DAPBulan;
+  const valueDAPTahun = apiData?.API[0]?.DAPTahun;
+  const valueDAPSisa = apiData?.API[0]["Sisa Target DAP"];
+  const valueNPS24Jam = apiData?.API[0]?.NPS24Jam;
+  const valueNPSBulan = apiData?.API[0]?.NPSBulan;
+  const valueNPSTahun = apiData?.API[0]?.NPSTahun;
+  const valueNPSSisa = apiData?.API[0]["Sisa Target NPS"];
 
   return (
     <Layout>
@@ -83,91 +88,91 @@ const Laporan24Jam = () => {
                   <td class="border border-slate-700 px-2 py-1 text-left">
                     Produki Phonska
                   </td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
                 </tr>
                 <tr>
                   <td class="border border-slate-700 px-2 py-1 text-left">
                     Produksi PHONSKA 15-10-12
                   </td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
                 </tr>
                 <tr>
                   <td class="border border-slate-700 px-2 py-1 text-left">
                     Pengantongan DAP
                   </td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">{value24Jam}</td>
-                  <td class="border border-slate-700">{valueBulan}</td>
-                  <td class="border border-slate-700">{valueTahun}</td>
-                  <td class="border border-slate-700">data</td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700">{valueDAP24Jam}</td>
+                  <td class="border border-slate-700">{valueDAPBulan}</td>
+                  <td class="border border-slate-700">{valueDAPTahun}</td>
+                  <td class="border border-slate-700">{valueDAPSisa}</td>
                 </tr>
                 <tr>
                   <td class="border border-slate-700 px-2 py-1 text-left">
                     Pengantongan Phonska
                   </td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
                 </tr>
                 <tr>
                   <td class="border border-slate-700 px-2 py-1 text-left">
                     Prod NPS
                   </td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700">{valueNPS24Jam}</td>
+                  <td class="border border-slate-700">{valueNPSBulan}</td>
+                  <td class="border border-slate-700">{valueNPSTahun}</td>
+                  <td class="border border-slate-700">{valueNPSSisa}</td>
                 </tr>
                 <tr>
                   <td class="border border-slate-700 px-2 py-1 text-left">
                     Produksi Phonska Natural
                   </td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
                 </tr>
                 <tr>
                   <td class="border border-slate-700 px-2 py-1 text-left">
                     Produksi Plus 15-15-15
                   </td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
                 </tr>
                 <tr>
                   <td class="border border-slate-700 px-2 py-1 text-left">
                     Produksi DAP
                   </td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
                 </tr>
                 <tr>
                   <td class="border border-slate-700 px-2 py-1 text-left">
                     Pemindahan Mixture 17-0-18
                   </td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
+                  <td class="border border-slate-700"></td>
                 </tr>
                 <tr>
                   <td class="border border-slate-700">data</td>
