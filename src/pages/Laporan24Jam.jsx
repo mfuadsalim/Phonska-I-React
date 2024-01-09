@@ -1,8 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "./Layout";
 import Logo from "../assets/logo/logopetro.png";
+import axios from "axios";
 
 const Laporan24Jam = () => {
+  const [apiData, setApiData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          "https://script.google.com/macros/s/AKfycbw0_R038MM5OMGOLp5LFGdLrRiKfmEWQPh6UwyvyX6HDQtBdihb7SW2Zxw_IO-RVxTN/exec"
+        );
+        setApiData(response.data);
+        console.log("Bulan Data:", response.data?.API[1]);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const value24Jam = apiData?.API[0]["24 Jam"];
+  const valueBulan = apiData?.API[0]?.Bulan;
+  const valueTahun = apiData?.API[0]?.Tahun;
+
   return (
     <Layout>
       <div className="px-6">
@@ -81,9 +104,9 @@ const Laporan24Jam = () => {
                     Pengantongan DAP
                   </td>
                   <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
-                  <td class="border border-slate-700">data</td>
+                  <td class="border border-slate-700">{value24Jam}</td>
+                  <td class="border border-slate-700">{valueBulan}</td>
+                  <td class="border border-slate-700">{valueTahun}</td>
                   <td class="border border-slate-700">data</td>
                 </tr>
                 <tr>
