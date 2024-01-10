@@ -9,7 +9,9 @@ const Layout = ({ children }) => {
   return (
     <React.Fragment>
       <Navbar />
-      <main className="content mt-20 md:mt-24">{children}</main>
+      <main className="content mt-20 md:mt-[78px] bg-[#F4F8FA]">
+        {children}
+      </main>
     </React.Fragment>
   );
 };
