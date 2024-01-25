@@ -16,7 +16,7 @@ const Welcome = () => {
         <div className="md:px-8 px-6 md:py-4 py-8">
           <div className="flex items-center justify-between md:mb-2 mb-8">
             <h1 className="md:text-4xl text-2xl text-slate-900 font-bold font-[Inter]">
-              Halo, <span className="text-[#1E7653]">Fuad Salim</span>
+              Halo, <span className="text-[#1E7653]">Phonska I!</span>
             </h1>
             <DateCard />
             {/* <div className="bg-white border w-40 md:w-56 text-xs md:text-lg border-[#E2E8F0] rounded-lg font-medium text-gray-900 py-1 md:px-2 px-3 justify-center flex items-center shadow-sm object-center">

@@ -40,7 +40,7 @@ function App() {
   <Route path="/laporan/laporanfinishing" element={<LaporanFinishing />}/>
   <Route path="/laporan/laporanmaintenance" element={<LaporanMaintenance />}/>
   <Route path="/laporan/laporanlivereport" element={<LaporanLiveReport />}/>
-  <Route path="/laporan/laporandserahterima" element={<LaporanSerahTerima />}/>
+  <Route path="/laporan/laporanserahterima" element={<LaporanSerahTerima />}/>
   <Route path="/laporan/laporan24jam/detaillaporan24jam" element={<DetailData24Jam />}/>
   <Route path="/laporan/laporan8jam/detaillaporan8jam" element={<DetailLaporan8Jam />}/>
   <Route path="/laporan/laporancoatingoil/detaillaporancoatingoil" element={<DetailLaporanCoatingOil />}/>

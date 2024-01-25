@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/logo/logopetro.png";
 import { IoMenu, IoClose } from "react-icons/io5";
-// import Welcome from "../pages/Welcome";
-import Laporan from "../pages/Laporan";
 
 const Navbar = () => {
   let [open, setOpen] = useState(false);
@@ -52,14 +50,6 @@ const Navbar = () => {
                   Data Laporan
                 </div>
               </Link>
-            </li>
-            <li className="md:ml-6 text-lg font-semibold font-[Inter] my-4">
-              <a
-                href={<Laporan />}
-                className="text-slate-800 hover:text-[#009D3C] duration-500]"
-              >
-                Settings
-              </a>
             </li>
           </ul>
         </div>

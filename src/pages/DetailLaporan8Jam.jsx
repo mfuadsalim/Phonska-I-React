@@ -94,9 +94,6 @@ const DetailLaporan8Jam = () => {
                 View Laporan
               </button>
             </Link>
-            <button className="bg-[#009D3C] text-white font-medium py-2 px-4 rounded-lg shadow-md">
-              View Laporan Serah Terima
-            </button>
           </div>
         </div>
         <footer className="w-full bg-[#009D3C] text-center text-white p-3 font-[Inter] font-medium mt-6">

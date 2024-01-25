@@ -1,12 +1,8 @@
 import React from "react";
+import SearchBar from "../components/SearchBar";
+import Pagination from "../components/Pagination";
 import { Link } from "react-router-dom";
-import {
-  IoFunnel,
-  IoSearchSharp,
-  IoChevronBackOutline,
-  IoChevronForwardOutline,
-  IoSend,
-} from "react-icons/io5";
+import { IoChevronForwardOutline, IoSend } from "react-icons/io5";
 import Layout from "./Layout";
 import DateCard from "../components/DateCard";
 
@@ -22,26 +18,7 @@ const LaporanScrubbing = () => {
             <DateCard />
           </div>
 
-          <div className="flex items-center justify-between gap-1 items">
-            <form className="w-full flex justify-normal gap-1 items-center">
-              <input
-                type="search"
-                class=" block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-[#1E7653] focus:ring-[#1E7653]"
-                placeholder="Search Here..."
-              />
-              <button
-                type="submit"
-                class=" end-0 top-0 h-full rounded-lg border border-[#1E7653] bg-[#1E7653] p-2.5 text-sm font-medium text-white hover:bg-[#1E7653] focus:outline-none focus:ring-4 focus:ring-[#2CB47E] "
-              >
-                <IoSearchSharp className="text-xl" />
-                <span class="sr-only">Search</span>
-              </button>
-              <button className="bg-[#1E7653] font-[Inter] text-white py-4 md:py-2 text-lg px-4 flex rounded-lg items-center">
-                <span className="hidden md:block">Filter</span>{" "}
-                <IoFunnel className="md:ml-2" />
-              </button>
-            </form>
-          </div>
+          <SearchBar />
           <div id="Table" className="hidden md:block">
             <table className="w-full rounded-lg overflow-hidden shadow-lg mt-4 border border-[#224038]">
               <thead className="bg-[#224038] text-white font-[Inter] justify-normal">
@@ -276,55 +253,7 @@ const LaporanScrubbing = () => {
             </div>
             {/* Card  */}
           </div>
-          <div
-            id="paginate"
-            className="flex items-center justify-center gap-2 mt-8"
-          >
-            <IoChevronBackOutline className="w-10 h-10 shadow-md p-2 bg-white border border-gray-200 rounded-lg md:hover:bg-gray-300" />
-            <ul className="inline-flex justify-center gap-2">
-              <li>
-                <a
-                  href="https://play.tailwindcss.com/"
-                  className="w-10 h-10 border py-2.5 px-4 rounded-lg border-gray-200 bg-[#1E7653] text-white md:hover:bg-gray-300"
-                >
-                  1
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://play.tailwindcss.com/"
-                  className="w-10 h-10 border py-2.5 px-4 rounded-lg border-gray-200 bg-white md:hover:bg-gray-300"
-                >
-                  2
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://play.tailwindcss.com/"
-                  className="w-10 h-10 border py-2.5 px-4 rounded-lg border-gray-200 bg-white md:hover:bg-gray-300"
-                >
-                  3
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://play.tailwindcss.com/"
-                  className="w-10 h-10 border py-2.5 px-4 rounded-lg border-gray-200 bg-white md:hover:bg-gray-300"
-                >
-                  4
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://play.tailwindcss.com/"
-                  className="w-10 h-10 border py-2.5 px-4 rounded-lg border-gray-200 bg-white md:hover:bg-gray-300"
-                >
-                  5
-                </a>
-              </li>
-            </ul>
-            <IoChevronForwardOutline className="w-10 h-10 shadow-md p-2 bg-white border border-gray-200 rounded-lg md:hover:bg-gray-300" />
-          </div>
+          <Pagination />
         </div>
         <footer className="w-full bg-[#009D3C] text-center text-white p-3 font-[Inter] font-medium mt-6">
           Copyright @2023
