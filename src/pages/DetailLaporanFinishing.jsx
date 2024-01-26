@@ -3,8 +3,17 @@ import { Link } from "react-router-dom";
 import Layout from "./Layout";
 import DateCard from "../components/DateCard";
 import Foto from "../assets/img/hardness.jpg";
+import DetailTable from "../components/DetailTable";
 
 const DetailLaporanFinishing = () => {
+  const data = [
+    { column1: "Shift", column2: "Malam" },
+    { column1: "Jam", column2: "12" },
+    { column1: "TI-115", column2: "56" },
+    { column1: "TI-116", column2: "65" },
+    { column1: "Rate Produk (Ton)", column2: "63" },
+    { column1: "Hardness", column2: "Cukup" },
+  ];
   return (
     <Layout>
       <div>
@@ -15,45 +24,9 @@ const DetailLaporanFinishing = () => {
             </h1>
             <DateCard />
           </div>
-          <div id="tabel">
-            <table className="w-full md:w-3/4 md:mx-auto mt-8 rounded-xl overflow-hidden shadow-lg">
-              <thead className=" bg-[#224038] text-white">
-                <tr>
-                  <th className="py-3" colSpan={2}>
-                    Detail Data Laporan Finishing
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="bg-white ">
-                <tr>
-                  <td className="p-4">Shift</td>
-                  <td className="w-52 px-2 py-4">Malam</td>
-                </tr>
-                <tr>
-                  <td className="p-4">Jam</td>
-                  <td className="w-52 px-2 py-4">12</td>
-                </tr>
-                <tr>
-                  <td className="p-4">TI-115</td>
-                  <td className="w-52 px-2 py-4">65</td>
-                </tr>
-                <tr>
-                  <td className="p-4">TI-116</td>
-                  <td className="w-52 px-2 py-4">56</td>
-                </tr>
-                <tr>
-                  <td className="p-4">Rate Produk (Ton)</td>
-                  <td className="w-52 px-2 py-4">63</td>
-                </tr>
-                <tr>
-                  <td className="p-4">Hardness</td>
-                  <td className="w-52 px-2 py-4">Cukup</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <DetailTable data={data} head="Detail Data Finishing" />
           <div>
-            <table className="w-full md:w-3/4 md:mx-auto mt-8 rounded-xl overflow-hidden shadow-lg">
+            <table className="w-1/2 md:mx-auto mt-8 rounded-xl overflow-hidden shadow-lg">
               <thead className=" bg-[#224038] text-white">
                 <th className="py-3">Foto Dokumentasi</th>
               </thead>

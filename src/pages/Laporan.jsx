@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "../components/Card";
 import Layout from "./Layout";
-import DateCard from "../components/DateCard";
 
 const Laporan = () => {
   return (
@@ -12,7 +11,6 @@ const Laporan = () => {
             <h1 className="md:text-4xl text-2xl text-slate-900 font-bold font-[Inter]">
               Data Laporan
             </h1>
-            <DateCard />
           </div>
           {/* Cards */}
           <div className="md:grid md:grid-cols-4 md:gap-2 md:justify-normal">

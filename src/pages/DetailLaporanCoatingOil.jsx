@@ -2,8 +2,22 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Layout from "./Layout";
 import DateCard from "../components/DateCard";
+import DetailTable from "../components/DetailTable";
 
 const DetailLaporanCoatingOil = () => {
+  const data = [
+    { column1: "Nama", column2: "Fuad" },
+    { column1: "Grup", column2: "B2" },
+    { column1: "OB 959", column2: "644" },
+    { column1: "INP COF", column2: "912" },
+    { column1: "Namyoung/MCWAX", column2: "87" },
+    { column1: "ADAMAS", column2: "134" },
+    { column1: "Forbon", column2: "87" },
+    { column1: "JAK", column2: "130" },
+    { column1: "Sidacoat", column2: "80" },
+    { column1: "L. Akhir", column2: "30%" },
+    { column1: "Flow Coating Oil", column2: "120" },
+  ];
   return (
     <Layout>
       <div>
@@ -14,68 +28,7 @@ const DetailLaporanCoatingOil = () => {
             </h1>
             <DateCard />
           </div>
-          <div id="tabel">
-            <table className="w-full md:w-3/4 md:mx-auto mt-8 rounded-xl overflow-hidden shadow-lg">
-              <thead className=" bg-[#224038] text-white">
-                <tr>
-                  <th className="py-3" colSpan={2}>
-                    Detail Data Laporan Coating Oil
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="bg-white ">
-                <tr>
-                  <td className="p-4">Nama</td>
-                  <td className="w-16 px-2 py-4">Fuad</td>
-                </tr>
-                <tr>
-                  <td className="p-4">Grup</td>
-                  <td className="w-16 px-2 py-4">A</td>
-                </tr>
-                <tr id="garis">
-                  <th className="py-2 px-16" colSpan={2}>
-                    <hr />
-                  </th>
-                </tr>
-                <tr>
-                  <td className="p-4">OB 959</td>
-                  <td className="w-16 px-2 py-4">644</td>
-                </tr>
-                <tr>
-                  <td className="p-4">INP COF</td>
-                  <td className="w-16 px-2 py-4">912</td>
-                </tr>
-                <tr>
-                  <td className="p-4">Namyoung/MCWAX</td>
-                  <td className="w-16 px-2 py-4">87</td>
-                </tr>
-                <tr>
-                  <td className="p-4">ADAMAS</td>
-                  <td className="w-16 px-2 py-4">134</td>
-                </tr>
-                <tr>
-                  <td className="p-4">Forbon</td>
-                  <td className="w-16 px-2 py-4">87</td>
-                </tr>
-                <tr>
-                  <td className="p-4">JAK</td>
-                  <td className="w-16 px-2 py-4">130</td>
-                </tr>
-                <tr>
-                  <td className="p-4">Sidacoat</td>
-                  <td className="w-16 px-2 py-4">80</td>
-                </tr>
-                <tr>
-                  <td className="p-4">L Akhir</td>
-                  <td className="w-16 px-2 py-4">30%</td>
-                </tr>
-                <tr>
-                  <td className="p-4">Flow C. Oil</td>
-                  <td className="w-16 px-2 py-4">120</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <DetailTable data={data} head="Detail Data Coating Oil" />
           <div className="flex flex-col md:flex-row md:items-center gap-4 justify-center md:mt-6 mt-4">
             <Link to="/laporan/laporan24jam/detaillaporan24jam/hasillaporan">
               <button className="bg-[#009D3C] w-full text-white font-medium py-2 px-4 rounded-lg shadow-md">

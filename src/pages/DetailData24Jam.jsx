@@ -1,10 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import { IoCalendarClearOutline } from "react-icons/io5";
 import Layout from "./Layout";
-import DateCard from "../components/DateCard";
+import DetailTable from "../components/DetailTable";
 
 const DetailData24Jam = () => {
+  const data = [
+    { column1: "Supervisor", column2: "Fuad" },
+    { column1: "Foreman Atas", column2: "Emil" },
+    { column1: "Foreman Bawah", column2: "Agus" },
+    { column1: "Grup", column2: "A1" },
+    { column1: "Produksi Pupuk", column2: "502" },
+    { column1: "WQ Pupuk", column2: "654" },
+    { column1: "Produk", column2: "987" },
+    { column1: "MNRT Bahan Baku", column2: "87" },
+    { column1: "KCL", column2: "154" },
+    { column1: "ZA", column2: "140" },
+    { column1: "OFF", column2: "244" },
+    { column1: "UREA", column2: "695" },
+    { column1: "Produksi Pupuk", column2: "487" },
+  ];
+
   return (
     <Layout>
       <div>
@@ -13,78 +28,8 @@ const DetailData24Jam = () => {
             <h1 className="md:text-4xl text-lg text-slate-900 font-bold font-[Inter]">
               Muhammad Fuad Salim
             </h1>
-            <DateCard />
           </div>
-          <div id="tabel">
-            <table className="w-full md:w-3/4 md:mx-auto mt-8 rounded-xl overflow-hidden shadow-lg">
-              <thead className=" bg-[#224038] text-white">
-                <tr>
-                  <th className="py-3" colSpan={2}>
-                    Detail Data Laporan
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="bg-white ">
-                <tr>
-                  <td className="p-4">Supervisor</td>
-                  <td className="w-16 px-2 py-4">Fuad</td>
-                </tr>
-                <tr>
-                  <td className="p-4">Foreman Atas</td>
-                  <td className="w-16 px-2 py-4">Emil</td>
-                </tr>
-                <tr>
-                  <td className="p-4">Foreman Bawah</td>
-                  <td className="w-16 px-2 py-4">Agus</td>
-                </tr>
-                <tr>
-                  <td className="p-4">Grup</td>
-                  <td className="w-16 px-2 py-4">Fuad</td>
-                </tr>
-                <tr>
-                  <td className="p-4">Produksi Pupuk</td>
-                  <td className="w-16 px-2 py-4">502</td>
-                </tr>
-                <tr id="garis">
-                  <th className="py-2 px-16" colSpan={2}>
-                    <hr />
-                  </th>
-                </tr>
-                <tr>
-                  <td className="p-4">WQ Pupuk</td>
-                  <td className="w-16 px-2 py-4">654</td>
-                </tr>
-                <tr>
-                  <td className="p-4">Produk</td>
-                  <td className="w-16 px-2 py-4">987</td>
-                </tr>
-                <tr>
-                  <td className="p-4">MNRT Bahan Baku</td>
-                  <td className="w-16 px-2 py-4">87</td>
-                </tr>
-                <tr>
-                  <td className="p-4">KCL</td>
-                  <td className="w-16 px-2 py-4">154</td>
-                </tr>
-                <tr>
-                  <td className="p-4">ZA</td>
-                  <td className="w-16 px-2 py-4">140</td>
-                </tr>
-                <tr>
-                  <td className="p-4">OFF</td>
-                  <td className="w-16 px-2 py-4">244</td>
-                </tr>
-                <tr>
-                  <td className="p-4">UREA</td>
-                  <td className="w-16 px-2 py-4">695</td>
-                </tr>
-                <tr>
-                  <td className="p-4">Produksi Pupuk</td>
-                  <td className="w-16 px-2 py-4">487</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <DetailTable data={data} head="Detail Data Laporan 24 Jam" />
           <div className="flex flex-col md:flex-row md:items-center gap-4 justify-center md:mt-6 mt-4">
             <Link to="/laporan/laporan24jam/detaillaporan24jam/hasillaporan">
               <button className="bg-[#009D3C] w-full text-white font-medium py-2 px-4 rounded-lg shadow-md">

@@ -2,8 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Layout from "./Layout";
 import DateCard from "../components/DateCard";
+import DetailTable from "../components/DetailTable";
 
 const DetailLaporanScrubbing = () => {
+  const data = [
+    { column1: "Temperatur PN", column2: "114" },
+    { column1: "SG PN", column2: "1,56" },
+    { column1: "Ph PN", column2: "2,0" },
+    { column1: "SG T-103", column2: "1" },
+    { column1: "Ph T-103", column2: "2,9" },
+    { column1: "Ph T-104 (TGS)", column2: "5" },
+    { column1: "Visual Larutan PN", column2: "Kental dominan putih 15 detik" },
+  ];
+
   return (
     <Layout>
       <div>
@@ -14,54 +25,7 @@ const DetailLaporanScrubbing = () => {
             </h1>
             <DateCard />
           </div>
-          <div id="tabel">
-            <table className="w-full md:w-3/4 md:mx-auto mt-8 rounded-xl overflow-hidden shadow-lg">
-              <thead className=" bg-[#224038] text-white">
-                <tr>
-                  <th className="py-3" colSpan={2}>
-                    Detail Data Laporan Scrubbing
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="bg-white ">
-                <tr>
-                  <td className="p-4">Temperatur PN</td>
-                  <td className="w-52 px-2 py-4">114</td>
-                </tr>
-                <tr>
-                  <td className="p-4">SG PN</td>
-                  <td className="w-52 px-2 py-4">1.56</td>
-                </tr>
-                <tr>
-                  <td className="p-4">Ph PN</td>
-                  <td className="w-52 px-2 py-4">2.0</td>
-                </tr>
-                <tr>
-                  <td className="p-4">SG T-103</td>
-                  <td className="w-52 px-2 py-4">1</td>
-                </tr>
-                <tr>
-                  <td className="p-4">Ph T-103</td>
-                  <td className="w-52 px-2 py-4">2.9</td>
-                </tr>
-                <tr>
-                  <td className="p-4">Ph T-104 (TGS)</td>
-                  <td className="w-52 px-2 py-4">5</td>
-                </tr>
-                <tr id="garis">
-                  <th className="py-2 px-16" colSpan={2}>
-                    <hr />
-                  </th>
-                </tr>
-                <tr>
-                  <td className="p-4">Visual Larutan PN</td>
-                  <td className="w-52 px-2 py-4">
-                    Kental dominan putih 15 detik
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+          <DetailTable data={data} head="Detail Data Scrubbing" />
           <div className="flex flex-col md:flex-row md:items-center gap-4 justify-center md:mt-6 mt-4">
             <Link to="/laporan/laporan24jam/detaillaporan24jam/hasillaporan">
               <button className="bg-[#009D3C] w-full text-white font-medium py-2 px-4 rounded-lg shadow-md">
