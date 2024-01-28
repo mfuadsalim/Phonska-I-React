@@ -1,10 +1,11 @@
 import React from "react";
 import SearchBar from "../components/SearchBar";
 import Pagination from "../components/Pagination";
-import { Link } from "react-router-dom";
-import { IoChevronForwardOutline, IoSend } from "react-icons/io5";
+import { IoChevronForwardOutline } from "react-icons/io5";
 import Layout from "./Layout";
 import DateCard from "../components/DateCard";
+import DetailCard from "../components/DetailCard";
+import Button from "../components/Button";
 
 const LaporanScrubbing = () => {
   return (
@@ -31,140 +32,110 @@ const LaporanScrubbing = () => {
                   <td>1</td>
                   <td>05 Desember 2023</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporandscrubbing/detaillaporanscrubbing">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporandscrubbing/detaillaporanscrubbing"
+                    />
                   </td>
                 </tr>
                 <tr className="even:bg-[#E5E7EB] text-center font-semibold text-slate-900">
                   <td>2</td>
                   <td>04 Desember 2023</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporandscrubbing/detaillaporanscrubbing">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporandscrubbing/detaillaporanscrubbing"
+                    />
                   </td>
                 </tr>
                 <tr className="even:bg-[#E5E7EB] text-center font-semibold text-slate-900">
                   <td>3</td>
                   <td>07 Desember 2023</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporandscrubbing/detaillaporanscrubbing">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporandscrubbing/detaillaporanscrubbing"
+                    />
                   </td>
                 </tr>
                 <tr className="even:bg-[#E5E7EB] text-center font-semibold text-slate-900">
                   <td>4</td>
                   <td>08 Desember 2023</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporandscrubbing/detaillaporanscrubbing">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporandscrubbing/detaillaporanscrubbing"
+                    />
                   </td>
                 </tr>
                 <tr className="even:bg-[#E5E7EB] text-center font-semibold text-slate-900">
                   <td>5</td>
                   <td>05 Desember 2023</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporandscrubbing/detaillaporanscrubbing">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporandscrubbing/detaillaporanscrubbing"
+                    />
                   </td>
                 </tr>
                 <tr className="even:bg-[#E5E7EB] text-center font-semibold text-slate-900">
                   <td>6</td>
                   <td>09 Desember 2023</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporandscrubbing/detaillaporanscrubbing">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporandscrubbing/detaillaporanscrubbing"
+                    />
                   </td>
                 </tr>
                 <tr className="even:bg-[#E5E7EB] text-center font-semibold text-slate-900">
                   <td>7</td>
                   <td>10 Desember 2023</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporandscrubbing/detaillaporanscrubbing">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporandscrubbing/detaillaporanscrubbing"
+                    />
                   </td>
                 </tr>
                 <tr className="even:bg-[#E5E7EB] text-center font-semibold text-slate-900">
                   <td>8</td>
                   <td>11 Desember 2023</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporandscrubbing/detaillaporanscrubbing">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporandscrubbing/detaillaporanscrubbing"
+                    />
                   </td>
                 </tr>
                 <tr className="even:bg-[#E5E7EB] text-center font-semibold text-slate-900">
                   <td>9</td>
                   <td>13 Desember 2023</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporandscrubbing/detaillaporanscrubbing">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporandscrubbing/detaillaporanscrubbing"
+                    />
                   </td>
                 </tr>
                 <tr className="even:bg-[#E5E7EB] text-center font-semibold text-slate-900">
                   <td>10</td>
                   <td>13 Desember 2023</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporandscrubbing/detaillaporanscrubbing">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporandscrubbing/detaillaporanscrubbing"
+                    />
                   </td>
                 </tr>
               </tbody>
@@ -172,86 +143,36 @@ const LaporanScrubbing = () => {
           </div>
 
           <div id="card" className="md:hidden">
-            {/* Card */}
-            <div className="bg-white rounded-lg shadow-lg md:w-80 w-full md:px-4 md:py-6 p-6 mx-auto mt-4">
-              <h1 className="font-bold text-xl md:text-center">
-                05 Desember 2023
-              </h1>
-              <p className=" md:mt-2 mt-4 md:text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                quis ipsum sapiente eligendi quod asperiores?
-              </p>
-              <Link to="/laporan/laporandscrubbing/detaillaporanscrubbing">
-                <button className="right-0 bg-[#009D3C] md:mx-auto text-white py-2 px-4 font-medium font-[Inter] rounded-lg flex items-center mt-4">
-                  Lihat Laporan <IoSend className="ml-2" />
-                </button>
-              </Link>
-            </div>
-            {/* Card  */}
-            {/* Card */}
-            <div className="bg-white rounded-lg shadow-lg md:w-80 w-full md:px-4 md:py-6 p-6 mx-auto mt-4">
-              <h1 className="font-bold text-xl md:text-center">
-                06 Desember 2023
-              </h1>
-              <p className=" md:mt-2 mt-4 md:text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                quis ipsum sapiente eligendi quod asperiores?
-              </p>
-              <Link to="/laporan/laporandscrubbing/detaillaporanscrubbing">
-                <button className="right-0 bg-[#009D3C] md:mx-auto text-white py-2 px-4 font-medium font-[Inter] rounded-lg flex items-center mt-4">
-                  Lihat Laporan <IoSend className="ml-2" />
-                </button>
-              </Link>
-            </div>
-            {/* Card  */}
-            {/* Card */}
-            <div className="bg-white rounded-lg shadow-lg md:w-80 w-full md:px-4 md:py-6 p-6 mx-auto mt-4">
-              <h1 className="font-bold text-xl md:text-center">
-                07 Desember 2023
-              </h1>
-              <p className=" md:mt-2 mt-4 md:text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                quis ipsum sapiente eligendi quod asperiores?
-              </p>
-              <Link to="/laporan/laporandscrubbing/detaillaporanscrubbing">
-                <button className="right-0 bg-[#009D3C] md:mx-auto text-white py-2 px-4 font-medium font-[Inter] rounded-lg flex items-center mt-4">
-                  Lihat Laporan <IoSend className="ml-2" />
-                </button>
-              </Link>
-            </div>
-            {/* Card  */}
-            {/* Card */}
-            <div className="bg-white rounded-lg shadow-lg md:w-80 w-full md:px-4 md:py-6 p-6 mx-auto mt-4">
-              <h1 className="font-bold text-xl md:text-center">
-                08 Desember 2023
-              </h1>
-              <p className=" md:mt-2 mt-4 md:text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                quis ipsum sapiente eligendi quod asperiores?
-              </p>
-              <Link to="/laporan/laporandscrubbing/detaillaporanscrubbing">
-                <button className="right-0 bg-[#009D3C] md:mx-auto text-white py-2 px-4 font-medium font-[Inter] rounded-lg flex items-center mt-4">
-                  Lihat Laporan <IoSend className="ml-2" />
-                </button>
-              </Link>
-            </div>
-            {/* Card  */}
-            {/* Card */}
-            <div className="bg-white rounded-lg shadow-lg md:w-80 w-full md:px-4 md:py-6 p-6 mx-auto mt-4">
-              <h1 className="font-bold text-xl md:text-center">
-                09 Desember 2023
-              </h1>
-              <p className=" md:mt-2 mt-4 md:text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                quis ipsum sapiente eligendi quod asperiores?
-              </p>
-              <Link to="/laporan/laporandscrubbing/detaillaporanscrubbing">
-                <button className="right-0 bg-[#009D3C] md:mx-auto text-white py-2 px-4 font-medium font-[Inter] rounded-lg flex items-center mt-4">
-                  Lihat Laporan <IoSend className="ml-2" />
-                </button>
-              </Link>
-            </div>
-            {/* Card  */}
+            <DetailCard
+              title="05 Desember 2023 "
+              content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+              quis ipsum sapiente eligendi quod asperiores?"
+              to="/laporan/laporandscrubbing/detaillaporanscrubbing"
+            />
+            <DetailCard
+              title="06 Desember 2023 "
+              content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+              quis ipsum sapiente eligendi quod asperiores?"
+              to="/laporan/laporandscrubbing/detaillaporanscrubbing"
+            />
+            <DetailCard
+              title="07 Desember 2023 "
+              content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+              quis ipsum sapiente eligendi quod asperiores?"
+              to="/laporan/laporandscrubbing/detaillaporanscrubbing"
+            />
+            <DetailCard
+              title="08 Desember 2023 "
+              content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+              quis ipsum sapiente eligendi quod asperiores?"
+              to="/laporan/laporandscrubbing/detaillaporanscrubbing"
+            />
+            <DetailCard
+              title="09 Desember 2023 "
+              content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+              quis ipsum sapiente eligendi quod asperiores?"
+              to="/laporan/laporandscrubbing/detaillaporanscrubbing"
+            />
           </div>
           <Pagination />
         </div>

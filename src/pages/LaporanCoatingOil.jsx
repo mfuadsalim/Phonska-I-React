@@ -1,10 +1,11 @@
 import React from "react";
 import SearchBar from "../components/SearchBar";
 import Pagination from "../components/Pagination";
-import { Link } from "react-router-dom";
-import { IoChevronForwardOutline, IoSend } from "react-icons/io5";
+import { IoChevronForwardOutline } from "react-icons/io5";
 import Layout from "./Layout";
 import DateCard from "../components/DateCard";
+import Button from "../components/Button";
+import DetailCard from "../components/DetailCard";
 
 const LaporanCoatingOil = () => {
   return (
@@ -33,14 +34,11 @@ const LaporanCoatingOil = () => {
                   <td>05 Desember 2023</td>
                   <td>Pagi</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporancoatingoil/detaillaporancoatingoil">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporancoatingoil/detaillaporancoatingoil"
+                    />
                   </td>
                 </tr>
                 <tr className="even:bg-[#E5E7EB] text-center font-semibold text-slate-900">
@@ -48,14 +46,11 @@ const LaporanCoatingOil = () => {
                   <td>04 Desember 2023</td>
                   <td>Sore</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporancoatingoil/detaillaporancoatingoil">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporancoatingoil/detaillaporancoatingoil"
+                    />
                   </td>
                 </tr>
                 <tr className="even:bg-[#E5E7EB] text-center font-semibold text-slate-900">
@@ -63,14 +58,11 @@ const LaporanCoatingOil = () => {
                   <td>07 Desember 2023</td>
                   <td>Pagi</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporancoatingoil/detaillaporancoatingoil">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporancoatingoil/detaillaporancoatingoil"
+                    />
                   </td>
                 </tr>
                 <tr className="even:bg-[#E5E7EB] text-center font-semibold text-slate-900">
@@ -78,14 +70,11 @@ const LaporanCoatingOil = () => {
                   <td>08 Desember 2023</td>
                   <td>Pagi</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporancoatingoil/detaillaporancoatingoil">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporancoatingoil/detaillaporancoatingoil"
+                    />
                   </td>
                 </tr>
                 <tr className="even:bg-[#E5E7EB] text-center font-semibold text-slate-900">
@@ -93,14 +82,11 @@ const LaporanCoatingOil = () => {
                   <td>05 Desember 2023</td>
                   <td>Malam</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporancoatingoil/detaillaporancoatingoil">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporancoatingoil/detaillaporancoatingoil"
+                    />
                   </td>
                 </tr>
                 <tr className="even:bg-[#E5E7EB] text-center font-semibold text-slate-900">
@@ -108,14 +94,11 @@ const LaporanCoatingOil = () => {
                   <td>09 Desember 2023</td>
                   <td>Pagi</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporancoatingoil/detaillaporancoatingoil">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporancoatingoil/detaillaporancoatingoil"
+                    />
                   </td>
                 </tr>
                 <tr className="even:bg-[#E5E7EB] text-center font-semibold text-slate-900">
@@ -123,14 +106,11 @@ const LaporanCoatingOil = () => {
                   <td>10 Desember 2023</td>
                   <td>Siang</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporancoatingoil/detaillaporancoatingoil">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporancoatingoil/detaillaporancoatingoil"
+                    />
                   </td>
                 </tr>
                 <tr className="even:bg-[#E5E7EB] text-center font-semibold text-slate-900">
@@ -138,14 +118,11 @@ const LaporanCoatingOil = () => {
                   <td>11 Desember 2023</td>
                   <td>Sore</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporancoatingoil/detaillaporancoatingoil">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporancoatingoil/detaillaporancoatingoil"
+                    />
                   </td>
                 </tr>
                 <tr className="even:bg-[#E5E7EB] text-center font-semibold text-slate-900">
@@ -153,14 +130,11 @@ const LaporanCoatingOil = () => {
                   <td>13 Desember 2023</td>
                   <td>Pagi</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporancoatingoil/detaillaporancoatingoil">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporancoatingoil/detaillaporancoatingoil"
+                    />
                   </td>
                 </tr>
                 <tr className="even:bg-[#E5E7EB] text-center font-semibold text-slate-900">
@@ -168,14 +142,11 @@ const LaporanCoatingOil = () => {
                   <td>13 Desember 2023</td>
                   <td>Siang</td>
                   <td className="py-4">
-                    <Link to="/laporan/laporancoatingoil/detaillaporancoatingoil">
-                      <button className="bg-[#009D3C] px-3 py-2 text-white font-semibold rounded-lg flex items-center mx-auto">
-                        Lihat Detail
-                        <span className="text-lg">
-                          <IoChevronForwardOutline />
-                        </span>
-                      </button>
-                    </Link>
+                    <Button
+                      text="Lihat Detail"
+                      icon={<IoChevronForwardOutline />}
+                      path="/laporan/laporancoatingoil/detaillaporancoatingoil"
+                    />
                   </td>
                 </tr>
               </tbody>
@@ -183,86 +154,36 @@ const LaporanCoatingOil = () => {
           </div>
 
           <div id="card" className="md:hidden">
-            {/* Card */}
-            <div className="bg-white rounded-lg shadow-lg md:w-80 w-full md:px-4 md:py-6 p-6 mx-auto mt-4">
-              <h1 className="font-bold text-xl md:text-center">
-                05 Desember 2023 - Pagi
-              </h1>
-              <p className=" md:mt-2 mt-4 md:text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                quis ipsum sapiente eligendi quod asperiores?
-              </p>
-              <Link to="/laporan/laporancoatingoil/detaillaporancoatingoil">
-                <button className="right-0 bg-[#009D3C] md:mx-auto text-white py-2 px-4 font-medium font-[Inter] rounded-lg flex items-center mt-4">
-                  Lihat Laporan <IoSend className="ml-2" />
-                </button>
-              </Link>
-            </div>
-            {/* Card  */}
-            {/* Card */}
-            <div className="bg-white rounded-lg shadow-lg md:w-80 w-full md:px-4 md:py-6 p-6 mx-auto mt-4">
-              <h1 className="font-bold text-xl md:text-center">
-                06 Desember 2023 - Sore
-              </h1>
-              <p className=" md:mt-2 mt-4 md:text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                quis ipsum sapiente eligendi quod asperiores?
-              </p>
-              <Link to="/laporan/laporancoatingoil/detaillaporancoatingoil">
-                <button className="right-0 bg-[#009D3C] md:mx-auto text-white py-2 px-4 font-medium font-[Inter] rounded-lg flex items-center mt-4">
-                  Lihat Laporan <IoSend className="ml-2" />
-                </button>
-              </Link>
-            </div>
-            {/* Card  */}
-            {/* Card */}
-            <div className="bg-white rounded-lg shadow-lg md:w-80 w-full md:px-4 md:py-6 p-6 mx-auto mt-4">
-              <h1 className="font-bold text-xl md:text-center">
-                07 Desember 2023 - Siang
-              </h1>
-              <p className=" md:mt-2 mt-4 md:text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                quis ipsum sapiente eligendi quod asperiores?
-              </p>
-              <Link to="/laporan/laporancoatingoil/detaillaporancoatingoil">
-                <button className="right-0 bg-[#009D3C] md:mx-auto text-white py-2 px-4 font-medium font-[Inter] rounded-lg flex items-center mt-4">
-                  Lihat Laporan <IoSend className="ml-2" />
-                </button>
-              </Link>
-            </div>
-            {/* Card  */}
-            {/* Card */}
-            <div className="bg-white rounded-lg shadow-lg md:w-80 w-full md:px-4 md:py-6 p-6 mx-auto mt-4">
-              <h1 className="font-bold text-xl md:text-center">
-                08 Desember 2023 - Malam
-              </h1>
-              <p className=" md:mt-2 mt-4 md:text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                quis ipsum sapiente eligendi quod asperiores?
-              </p>
-              <Link to="/laporan/laporancoatingoil/detaillaporancoatingoil">
-                <button className="right-0 bg-[#009D3C] md:mx-auto text-white py-2 px-4 font-medium font-[Inter] rounded-lg flex items-center mt-4">
-                  Lihat Laporan <IoSend className="ml-2" />
-                </button>
-              </Link>
-            </div>
-            {/* Card  */}
-            {/* Card */}
-            <div className="bg-white rounded-lg shadow-lg md:w-80 w-full md:px-4 md:py-6 p-6 mx-auto mt-4">
-              <h1 className="font-bold text-xl md:text-center">
-                09 Desember 2023 - Pagi
-              </h1>
-              <p className=" md:mt-2 mt-4 md:text-center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
-                quis ipsum sapiente eligendi quod asperiores?
-              </p>
-              <Link to="/laporan/laporancoatingoil/detaillaporancoatingoil">
-                <button className="right-0 bg-[#009D3C] md:mx-auto text-white py-2 px-4 font-medium font-[Inter] rounded-lg flex items-center mt-4">
-                  Lihat Laporan <IoSend className="ml-2" />
-                </button>
-              </Link>
-            </div>
-            {/* Card  */}
+            <DetailCard
+              title="05 Desember - Pagi"
+              content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+              quis ipsum sapiente eligendi quod asperiores?"
+              to="/laporan/laporancoatingoil/detaillaporancoatingoil"
+            />
+            <DetailCard
+              title="06 Desember - Sore"
+              content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+              quis ipsum sapiente eligendi quod asperiores?"
+              to="/laporan/laporancoatingoil/detaillaporancoatingoil"
+            />
+            <DetailCard
+              title="06 Desember - Sore"
+              content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+              quis ipsum sapiente eligendi quod asperiores?"
+              to="/laporan/laporancoatingoil/detaillaporancoatingoil"
+            />
+            <DetailCard
+              title="07 Desember - Siang"
+              content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+              quis ipsum sapiente eligendi quod asperiores?"
+              to="/laporan/laporancoatingoil/detaillaporancoatingoil"
+            />
+            <DetailCard
+              title="08 Desember - Malam"
+              content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+              quis ipsum sapiente eligendi quod asperiores?"
+              to="/laporan/laporancoatingoil/detaillaporancoatingoil"
+            />
           </div>
           <Pagination />
         </div>
