@@ -7,7 +7,7 @@ const Navbar = () => {
   let [open, setOpen] = useState(false);
   return (
     <div>
-      <nav className="shadow-md w-full fixed  top-0 left-0 border border-slate-200">
+      <nav className="shadow-md w-full fixed  top-0 left-0 border border-slate-200 z-10">
         <div className="md:flex items-center justify-between bg-white md:py-2 py-8 md:px-8 px-6">
           <Link to="/">
             <div className="font-bold  md:text-2xl text-lg flex cursor-pointer items-center font-[Inter] text-[#009D3C]">

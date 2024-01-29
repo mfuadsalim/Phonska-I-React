@@ -4,7 +4,6 @@ import Laporan from "./pages/Laporan";
 import Laporan24Jam from "./pages/Laporan24Jam";
 import Detail24Jam from "./pages/Detail24Jam";
 import DetailData24Jam from "./pages/DetailData24Jam";
-import API from "./pages/API";
 import Laporan8Jam from "./pages/Laporan8Jam";
 import DetailLaporan8Jam from "./pages/DetailLaporan8Jam";
 import LaporanCoatingOil from "./pages/LaporanCoatingOil";
@@ -29,7 +28,6 @@ function App() {
 <BrowserRouter>
 <Routes>
   <Route path="/" element={<Welcome />}/>
-  <Route path="/test" element={<API />}/>
   <Route path="/laporan" element={<Laporan />}/>
   <Route path="/laporan/laporan24jam" element={<Detail24Jam />}/>
   <Route path="/laporan/laporan8jam" element={<Laporan8Jam />}/>

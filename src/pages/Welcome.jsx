@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Backround from "../assets/img/homeimg.jpg";
 import {
   IoSend,
   IoChevronForwardOutline,
@@ -8,6 +7,7 @@ import {
 } from "react-icons/io5";
 import Layout from "./Layout";
 import DateCard from "../components/DateCard";
+import Carousel from "../components/Carousel";
 
 const Welcome = () => {
   return (
@@ -19,19 +19,9 @@ const Welcome = () => {
               Halo, <span className="text-[#1E7653]">Phonska I!</span>
             </h1>
             <DateCard />
-            {/* <div className="bg-white border w-40 md:w-56 text-xs md:text-lg border-[#E2E8F0] rounded-lg font-medium text-gray-900 py-1 md:px-2 px-3 justify-center flex items-center shadow-sm object-center">
-              <IoCalendarClearOutline />
-              <span className="ml-2">04, Desember 2023</span>
-            </div> */}
           </div>
-          <div>
-            <img
-              src={Backround}
-              alt="Petrokimia1"
-              className="w-full md:h-60 h-56 bg-gray-400 rounded-xl shadow-md md:mt-6 mt-4 object-cover"
-            />
-          </div>
-          <div className="w-full md:px-6 px-10 md:py-8 py-8 bg-white rounded-xl shadow-lg md:mt-6 mt-6 font-[Inter]">
+          <Carousel className="flex" />
+          <div className="w-full md:px-6 px-10 md:py-8 py-8 bg-white rounded-xl shadow-lg md:mt-1 mt-6 font-[Inter]">
             <h1 className="text-xl font-semibold">
               Selamat Datang di{" "}
               <span className="text-[#1E7653]">
