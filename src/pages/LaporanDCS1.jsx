@@ -3,20 +3,20 @@ import SearchBar from "../components/SearchBar";
 import Pagination from "../components/Pagination";
 import { IoChevronForwardOutline } from "react-icons/io5";
 import Layout from "./Layout";
-import DateCard from "../components/DateCard";
 import DetailCard from "../components/DetailCard";
 import Button from "../components/Button";
+import BackButton from "../components/BackButton";
 
 const LaporanDCS1 = () => {
   return (
     <Layout>
       <div>
         <div className="md:px-8 px-6 md:py-4 py-8">
-          <div className="flex items-center justify-between md:mb-2 mb-8">
+          <div className="flex items-center justify-between md:mb-6 mb-8">
+            <BackButton />
             <h1 className="md:text-4xl text-2xl text-slate-900 font-bold font-[Inter]">
               Laporan DCS 1
             </h1>
-            <DateCard />
           </div>
 
           <SearchBar />

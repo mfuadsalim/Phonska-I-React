@@ -122,8 +122,8 @@ const Welcome = () => {
                 <IoChevronForwardOutline className="mx-auto" />
               </div>
             </div>
-            <Link to="/datalaporan">
-              <button className="hidden md:flex items-center px-6 md:px-8 gap-2 mt-6 text-xl mx-auto md:mx-0 text-slate-900 md:hover:text-green-800 font-semibold absolute bottom-0 right-0 ">
+            <Link to="/laporan">
+              <button className="hidden md:flex items-center px-6 md:px-10 gap-2 mt-4 text-xl mx-auto md:mx-0 text-slate-900 md:hover:text-green-800 font-semibold ">
                 See More{" "}
                 <IoChevronForwardOutline className="font-bold hidden md:block" />
               </button>
