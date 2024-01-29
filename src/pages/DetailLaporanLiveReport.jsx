@@ -1,8 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Layout from "./Layout";
-import DateCard from "../components/DateCard";
 import DetailTable from "../components/DetailTable";
+import BackButton from "../components/BackButton";
 
 const DetailLaporanLiveReport = () => {
   const data = [
@@ -26,10 +26,10 @@ const DetailLaporanLiveReport = () => {
       <div>
         <div className="md:px-8 px-6 md:py-4 py-8">
           <div className="flex items-center justify-between md:mb-2 mb-8">
+            <BackButton />
             <h1 className="md:text-4xl text-lg text-slate-900 font-bold font-[Inter]">
               Phonska 1
             </h1>
-            <DateCard />
           </div>
           <DetailTable data={data} head="Detail Data Maintenance" />
           <div className="flex flex-col md:flex-row md:items-center gap-4 justify-center md:mt-6 mt-4">
