@@ -14,7 +14,7 @@ const DateCard = () => {
   }, []);
 
   return (
-    <div className="bg-white border w-40 md:w-56 text-xs md:text-lg border-[#E2E8F0] rounded-lg font-medium text-gray-900 py-1 md:px-2 px-3 justify-center flex items-center shadow-sm object-center">
+    <div className="bg-white border w-36 md:w-56 text-xs md:text-lg border-[#E2E8F0] rounded-lg font-medium text-gray-900 py-1 md:px-2 px-3 justify-center flex items-center shadow-sm object-center">
       <IoCalendarClearOutline />
       <span className="ml-2">{currentDate.format("D MMMM YYYY")}</span>
     </div>
