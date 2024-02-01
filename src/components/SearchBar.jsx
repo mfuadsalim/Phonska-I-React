@@ -4,10 +4,10 @@ import { IoSearchSharp } from "react-icons/io5";
 const SearchBar = () => {
   return (
     <div className="flex items-center justify-between gap-1 items">
-      <form className="w-full flex justify-normal gap-1 items-center">
+      <form className="w-full flex justify-normal gap-1 items-center bg-white">
         <input
           type="search"
-          class=" block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-[#1E7653] focus:ring-[#1E7653]"
+          class=" block w-full rounded-lg border border-gray-300 bg-white p-2.5 text-sm text-gray-900 focus:border-[#1E7653] focus:ring-[#1E7653]"
           placeholder="Search Here..."
         />
         <button

@@ -31,7 +31,7 @@ const DetailLaporanLiveReport = () => {
               Phonska 1
             </h1>
           </div>
-          <DetailTable data={data} head="Detail Data Maintenance" />
+          <DetailTable data={data} head="Detail Data Live Report" />
           <div className="flex flex-col md:flex-row md:items-center gap-4 justify-center md:mt-6 mt-4">
             <Link to="/laporan/laporan24jam/detaillaporan24jam/hasillaporan">
               <button className="bg-[#009D3C] w-full text-white font-medium py-2 px-4 rounded-lg shadow-md">
