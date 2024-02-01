@@ -26,7 +26,7 @@ const DetailLaporanFinishing = () => {
           </div>
           <DetailTable data={data} head="Detail Data Finishing" />
           <div>
-            <table className="w-1/2 md:mx-auto mt-8 rounded-xl overflow-hidden shadow-lg">
+            <table className="w-full md:w-1/2 md:mx-auto mt-8 rounded-xl overflow-hidden shadow-lg">
               <thead className=" bg-[#224038] text-white">
                 <th className="py-3">Foto Dokumentasi</th>
               </thead>
