@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Layout from "./Layout";
 import DetailTable from "../components/DetailTable";
+import BackButton from "../components/BackButton";
 
 const DetailData24Jam = () => {
   const data = [
@@ -25,6 +26,7 @@ const DetailData24Jam = () => {
       <div>
         <div className="md:px-8 px-6 md:py-4 py-8">
           <div className="flex items-center justify-between md:mb-2 mb-8">
+            <BackButton />
             <h1 className="md:text-4xl text-lg text-slate-900 font-bold font-[Inter]">
               Muhammad Fuad Salim
             </h1>
